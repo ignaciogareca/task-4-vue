@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="https://kit.fontawesome.com/6b623874a7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/images/Logo-Amazing-Events.png" type="image/x-icon">
+    <title>Stats</title>
+</head>
+<body>        
+    <div id="app">
+      <header>
+        <nav class="navbar navbar-expand-lg  container-fluid d-flex justify-content-end justify-content-between">
+          <div class="container">
+              <img class="logo" src="./assets/images/Logo-Amazing-Events.png" alt="LogoAmazing" >
+          </div>
+            <div class="navbar-nav d-flex flex-row flex-wrap gap-2 pe-5 nav">
+              <a class="button" href="./index.html">Home</a>
+              <a class="button" href="./upcoming-events.html">Upcoming Events</a>
+              <a class="button"  href="./past-events.html">Past Events</a>
+              <a class="button"  href="./contact.html"> contact</a>
+              <a class="button" id="active" href=".#">stats</a>
+            </div>
+        </nav>
+        <div class="title mb-3">
+          <h1>Stats</h1>
+        </div>
+      </header>
+        <main class="d-flex justify-content-center my-5">
+                <table class="table table-white table-striped text-center conteiner_table m-2">
+                    <thead>
+                        <tr>
+                            <th colspan=3 class="fs-4">
+                                Event statistics
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="fs-5">Event with the highest percentage of attendance</th>
+                            <th class="fs-5">Event with the lowest percentage of attendance</th>
+                            <th class="fs-5">Event with larger capacity</th>	
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{eventoMayorPorcentaje[0]}}</td>
+                            <td>{{eventoMenorPorcentaje[0]}}</td>
+                            <td>{{eventoMayorCapacidad[0]}} </td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan=3 class="fs-4">Upcoming events statistics by category</th>
+                        </tr>
+                        <tr>
+                            <th class="fs-5">Category</th>
+                            <th class="fs-5">Revenues</th>
+                            <th class="fs-5">Percentage of attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="evento in categoriaNuevoObjComing">
+                            <td>{{evento.nombre}}</td>
+                            <td>${{evento.revenues}} </td>
+                            <td>{{Math.round(evento.estimate*100/evento.capacity)}}% </td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan=3 class="fs-4">Past events statistics by category</th>
+                        </tr>
+                        <tr>
+                            <th class="fs-5">Category</th>
+                            <th class="fs-5">Revenues</th>
+                            <th class="fs-5">Percentage of attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="evento in categoriaNuevoObjPast">
+                            <td>{{evento.nombre}}</td>
+                            <td>${{evento.revenues}} </td>
+                            <td>{{Math.round(evento.assistance*100/evento.capacity)}}% </td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            
+            
+        </main>
+        <footer>
+          <div class="footer-contain">
+            <div class="redes">
+              <figure><i class="fa-brands fa-instagram logos-redes"></i></figure>
+              <figure><i class="fa-brands fa-facebook logos-redes"></i></figure>
+              <figure><i class="fa-brands fa-whatsapp"></i></figure>
+            </div>
+            <div class="footer-text">
+              <h4> Cohort 38</h4>
+            </div>
+          </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./vue.js"></script>
+</body>
+</html>
+    

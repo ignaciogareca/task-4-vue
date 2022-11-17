@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    min-height: 57vh;
+}
+.logo{
+    width: 10rem;
+    padding-left: 1rem;
+}
+.cartita{
+    width: 18rem;
+}
+.check{
+    text-decoration: none;
+    color: black !important;
+    background-color: rgb(255, 255, 255) !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 .5rem;
+    border-color: black !important;
+}
+header>nav{
+    height: 7rem;
+    background-color: rgb(211, 209, 209);
+    border-bottom: 1px solid black;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+}
+footer>div>div i{
+    width: 4rem;
+}
+.title{
+    height: 7rem;
+    background-color: rgb(226, 225, 225) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.nav{
+    width: 35rem;
+}
+.container{
+    width: 10rem;
+    margin: 0;
+}
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+footer{
+    background-color: rgb(226, 225, 225);
+    height: 4.5rem;
+    margin-top: 5rem;
+    border-top: 1px solid black;
+}
+.footer-contain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 3rem;
+}
+.footer-text{
+    margin-right: 3rem;
+}
+.logos-redes::before{
+    width: 4rem;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.info{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 5rem;
+}
+.price{
+    margin: 0;
+}
+.card-text{
+    margin-bottom: 2rem;
+}
+.navbar-main{
+    text-decoration: none;
+    color: black;
+
+}
+tbody, td, tfoot, th, thead, tr{
+    border-color: black !important;
+    border-width: 1px !important;
+}
+.navbar2{
+    margin-bottom: 4rem;
+}
+#active{
+    background-color: black;
+    color: white;
+}
+.main-contact{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+main>form{
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+    height: 24rem;
+    gap: 1rem;
+}
+.submit{
+    align-self: flex-end;
+}
+.largeform{
+    height: 10rem;
+}
+.table-title{
+    background-color: grey;
+    width: 100%;
+}
+.card-container2{
+    border: 1px solid black;
+    width: 100rem;
+    height: 30rem;
+}
+.pagecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagepage{
+    border: 1px solid black;
+
+
+}
+.headerpage{
+    margin-bottom: 5rem;
+}
+
+.border{
+    border: 1px solid black;
+}
+.detailsimg{
+    height: 30rem;
+    width: 40rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.detailscard{
+    width: 70rem;
+    height: 32.5rem;
+    display: flex;
+    gap: 3rem;
+}
+.detailscard2{
+    width: 70rem;
+    height: 35rem;
+
+}
+.cardimg{
+    min-height: 13rem;
+}
+@media only screen and (min-width: 325px) and (max-width: 767px) {
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 4rem !important;
+        align-self: center;
+    }
+    .logo{
+        align-self: center;
+        margin-left: 3rem;
+    }
+    .container{
+        align-self: center;
+    }
+    .navbarmcontainer{
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbarmcontainer{
+        margin: 0;
+    }
+    
+}
+@media only screen and (min-width: 1025px) {
+}
